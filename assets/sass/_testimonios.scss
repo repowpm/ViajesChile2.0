@@ -1,0 +1,97 @@
+
+
+/* Estilo para la sección de testimonios BEM */
+.testimonios {
+    background-color: #333; 
+    margin-top: 20px;
+    padding: 2rem 0; 
+}
+
+.testimonios__container {
+    max-width: 1140px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px; 
+    padding-right: 15px; 
+}
+
+.testimonios__title {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: #ffffff; 
+    text-align: center; 
+}
+
+.testimonios__divider {
+    background-color: #ffffff; 
+    height: 2px; 
+    margin-bottom: 2rem; 
+}
+
+
+.testimonios__list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+
+.testimonios__item {
+    flex: 1 1 calc(33.333% - 1rem); 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+
+.testimonios__card {
+    background-color: #333; 
+    border-radius: 0.5rem; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 1.25rem; 
+}
+
+
+.testimonios__text {
+    font-size: 1rem; 
+    color: white; 
+    margin-bottom: 1rem; 
+}
+
+
+.testimonios__image {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 2px solid #ddd; 
+    margin-bottom: 0.5rem; 
+}
+
+
+.testimonios__name {
+    font-size: 1rem; 
+    color: #ffffff; 
+    margin-top: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .testimonios__item {
+        flex: 1 1 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .testimonios__image {
+        width: 80px; 
+        height: 80px; 
+    }
+}
+
+
+
+

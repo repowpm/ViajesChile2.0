@@ -1,0 +1,416 @@
+@charset "UTF-8";
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+/* Estilo para la sección de testimonios BEM */
+.testimonios {
+  background-color: #333;
+  margin-top: 20px;
+  padding: 2rem 0;
+}
+
+.testimonios__container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.testimonios__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.testimonios__divider {
+  background-color: #ffffff;
+  height: 2px;
+  margin-bottom: 2rem;
+}
+
+.testimonios__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonios__item {
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonios__card {
+  background-color: #333;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+}
+
+.testimonios__text {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.testimonios__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.testimonios__name {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .testimonios__item {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+  .testimonios__image {
+    width: 80px;
+    height: 80px;
+  }
+}
+body {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.container h2,
+.container p {
+  color: white;
+}
+
+img {
+  border: 2px solid #333;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid white;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.logo-text {
+  color: #ddd;
+}
+
+.navbar .logo {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd;
+}
+
+.container-fluid {
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 80%;
+  }
+}
+.featured {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .featured {
+    max-width: 80%;
+  }
+}
+.carousel-item {
+  height: auto;
+  max-height: 550px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.quienes-somos {
+  padding: 60px 15px;
+  background-color: #333;
+}
+
+.quienes-somos .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.quienes-somos h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.quienes-somos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #333;
+}
+
+.quienes-somos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .img-column {
+    display: none;
+  }
+}
+.destinos {
+  background-color: #333;
+  color: black;
+  padding: 60px 15px;
+  margin-top: -50px;
+}
+
+.destinos .container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img-left {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 10px;
+}
+
+.destinos p {
+  color: black;
+  text-align: justify;
+}
+
+.card-price i {
+  margin-right: 5px;
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  .card-img-left {
+    width: 40%;
+  }
+  .card-body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .card-price {
+    margin-top: auto;
+  }
+}
+.contacto {
+  background-color: #333;
+  color: #ffffff;
+  padding: 60px 15px;
+}
+
+.containerContacto {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.h2Contactame {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form-label {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form .form-control {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #777777;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-check-label {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.botonFormulario {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonFormulario:hover {
+  background-color: #0d6dea;
+}
+
+.contact-list {
+  background-color: #333;
+  padding: 60px;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+}
+
+.contact-list li i {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.contact-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-form .col-md-6 {
+    width: 100%;
+  }
+  .contact-form {
+    margin-bottom: 1.5rem;
+  }
+  .h2Contactame {
+    text-align: center;
+  }
+}
+.modal-content {
+  background-color: #fff;
+  color: #333;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/*# sourceMappingURL=styles.css.map */
